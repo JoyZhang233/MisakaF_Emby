@@ -89,6 +89,7 @@ def create(update: Update, context: CallbackContext) -> None:
             requests.post('请把此处替换为你的Emby网址/emby/Users/'+id+'/Policy', headers=headers1, params=params1, data=data1)
 
             update.message.reply_text('注册用户名：' + name)
+            update.message.reply_text('\n Emby网址：http://132.226.228.40:8096/\n无初始密码，请尽快登录，点击右上角设置图标设置密码!\n有问题联系 @JoyZhang1820\n希望大家用的愉快!')          
             f = open('/home/accounts.txt', 'a')
             f.write(str(chat_id) + ' ' + id + '\n')
             f.close()
