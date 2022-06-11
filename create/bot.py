@@ -113,7 +113,7 @@ def reset(update: Update, context: CallbackContext) -> None:
             if(check3 == 1):
                 update.message.reply_text('密码移除成功，现密码为空！')
             else:
-                update.message.reply_text('未知错误，请联系管理人员解决！')
+                update.message.reply_text('请联系Joy重置密码')
 
 
 def bind(update: Update, context: CallbackContext) -> None:
